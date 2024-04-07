@@ -1,8 +1,61 @@
+/* Update the font-family to use a sans-serif font stack */
 html {
-  height: 100%;
-  width: 100%;
+  font-family: 'Arial', sans-serif;
 }
 
-.grid-item {
-  width: 400%; /* Adjust the width based on the grid container */
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #f2f2f2;
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 110%; /* Increased card size by 10% */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Add a black line between title-box, description-box, and label-box */
+.title-box, .description-box, .label-box {
+  border-bottom: 1px solid #000;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+}
+
+h3 {
+  font-size: 1em;
+  margin: 5px 0;
+}
+
+p {
+  color: #666;
+  margin: 5px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
 }
