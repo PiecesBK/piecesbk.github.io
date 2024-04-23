@@ -3,12 +3,83 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Grid App</title>
+  <title>Checklist</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Yellowtail&display=swap" rel="stylesheet">
   <style>
+     .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      background-color: #333;
+      color: #fff;
+    }
+
+    .navbar-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .navbar-nav {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .navbar-nav-item {
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .navbar-nav-dropdown {
+      position: absolute;
+      top: calc(100% + 0.5rem);
+      left: 0;
+      width: 100%;
+      padding: 1rem;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      display: none;
+    }
+
+    .navbar-nav-dropdown-item {
+      font-size: 1rem;
+      font-weight: normal;
+      cursor: pointer;
+    }
+
+    .navbar-nav-dropdown-item:hover {
+      background-color: #f5f5f5;
+    }
+
+    .navbar-nav-item:hover .navbar-nav-dropdown {
+      display: block;
+    }
+
+    .navbar-discord {
+      width: 30px;
+      height: 30px;
+      background-color: #7289da;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .navbar-discord-icon {
+      color: #fff;
+      font-size: 1.5rem;
+    }
+
     body {
-      font-family: 'Helvetica', 'Arial', sans-serif;
+      font-family: 'Lexend Deca', 'system', sans-serif;
     }
 
     .grid-container {
@@ -26,6 +97,7 @@
     }
 
     .grid-item-header {
+      font: Yellowtail;
       font-size: 1.2rem;
       font-weight: bold;
       margin-bottom: 0.5rem;
@@ -61,48 +133,45 @@
       text-align: right;
     }
 
-    .filter-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 1rem;
-    }
-
-    .filter-label {
-      font-size: 1rem;
+    .section-title {
+      font-size: 1.5rem;
       font-weight: bold;
-      margin-right: 0.5rem;
-    }
-
-    .filter-select {
-      width: 150px;
-      height: 30px;
-      padding: 0.5rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
+      margin: 2rem 0;
+      text-align: center;
     }
   </style>
 </head>
 
 <body>
-  <div class="filter-container">
-    <div class="filter-label">Category:</div>
-    <select class="filter-select">
-      <option value="all">All</option>
-      <option value="1">Category 1</option>
-      <option value="2">Category 2</option>
-    </select>
-    <div class="filter-label">Subtitle:</div>
-    <select class="filter-select">
-      <option value="all">All</option>
-      <option value="GITD">GITD</option>
-      <option value="Blacklight">Blacklight</option>
-    </select>
+   <div class="navbar">
+    <div class="navbar-title">Pieces Checklist</div>
+    <div class="navbar-nav">
+      <div class="navbar-nav-item">Gastlecast
+        <div class="navbar-nav-dropdown">
+          <div class="navbar-nav-dropdown-item">Link 1</div>
+          <div class="navbar-nav-dropdown-item">Link 2</div>
+          <div class="navbar-nav-dropdown-item">Link 3</div>
+        </div>
+      </div>
+      <div class="navbar-nav-item">Mischief Toys
+        <div class="navbar-nav-dropdown">
+          <div class="navbar-nav-dropdown-item">Link 1</div>
+          <div class="navbar-nav-dropdown-item">Link 2</div>
+          <div class="navbar-nav-dropdown-item">Link 3</div>
+        </div>
+      </div>
+    </div>
+    <a href="https://discord.gg/BGuyBt7Y" class="navbar-discord">
+      <i class="fab fa-discord navbar-discord-icon"></i>
+    </a>
   </div>
+  
+  <div class="section-title">Another Section</div>
+  
   <div class="grid-container">
     <div class="grid-item">
       <div class="grid-item-header">Item 1</div>
-      <img class="grid-item-photo" src="https://www.ancodeai.com/placeholder.svg" alt="Placeholder image for Item 1" />
+      <img class="grid-item-photo" src="https://www.ancodeai.com/placeholder.svg" alt="Placeholder image for Item 1"/>
       <div class="grid-item-subtitle">
         <i class="fas fa-moon grid-item-subtitle-icon"></i>
         GITD
@@ -115,9 +184,9 @@
     </div>
     <div class="grid-item">
       <div class="grid-item-header">Item 2</div>
-      <img class="grid-item-photo" src="https://www.ancodeai.com/placeholder.svg" alt="Placeholder image for Item 2" />
+      <img class="grid-item-photo" src="https://www.ancodeai.com/placeholder.svg" alt="Placeholder image for Item 2"/>
       <div class="grid-item-subtitle">
-        <i class="fas fa-lightbulb grid-item-subtitle-icon"></i>
+        <i class="fas fa-lightbulb grid-item-subtitle-icon" data-uid="50f"></i>
         Blacklight
       </div>
       <div class="grid-item-paragraph">
@@ -128,7 +197,7 @@
     </div>
     <div class="grid-item">
       <div class="grid-item-header">Item 3</div>
-      <img class="grid-item-photo" src="https://www.ancodeai.com/placeholder.svg" alt="Placeholder image for Item 3" />
+      <img class="grid-item-photo" src="https://www.ancodeai.com/placeholder.svg" alt="Placeholder image for Item 3"/>
       <div class="grid-item-subtitle">
         <i class="fas fa-star-of-life grid-item-subtitle-icon"></i>
         Original
@@ -141,7 +210,7 @@
     </div>
     <div class="grid-item">
       <div class="grid-item-header">Item 4</div>
-      <img class="grid-item-photo" src="https://www.ancodeai.com/placeholder.svg" alt="Placeholder image for Item 4" />
+      <img class="grid-item-photo" src="https://www.ancodeai.com/placeholder.svg" alt="Placeholder image for Item 4"/>
       <div class="grid-item-subtitle">
         <i class="fas fa-crown grid-item-subtitle-icon"></i>
         Coven Exclusive
@@ -154,7 +223,7 @@
     </div>
     <div class="grid-item">
       <div class="grid-item-header">Item 5</div>
-      <img class="grid-item-photo" src="https://www.ancodeai.com/placeholder.svg" alt="Placeholder image for Item 5" />
+      <img class="grid-item-photo" src="https://www.ancodeai.com/placeholder.svg" alt="Placeholder image for Item 5"/>
       <div class="grid-item-subtitle">
         <i class="fas fa-moon grid-item-subtitle-icon"></i>
         GITD
@@ -167,11 +236,56 @@
     </div>
     <div class="grid-item">
       <div class="grid-item-header">Item 6</div>
-      <img class="grid-item-photo" src="https://www.ancodeai.com/placeholder.svg" alt="Placeholder image for Item 6" />
+      <img class="grid-item-photo" src="https://www.ancodeai.com/placeholder.svg" alt="Placeholder image for Item 6"/>
       <div class="grid-item-subtitle">
         <i class="fas fa-lightbulb grid-item-subtitle-icon"></i>
         Blacklight
       </div>
       <div class="grid-item-paragraph">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget lacus eget nunc tincidunt laoreet.
-        Suspendisse potenti. Mauris eget lacus eget nunc tincidunt laoreet
+        Suspendisse potenti. Mauris eget lacus eget nunc tincidunt laoreet. Suspendisse potenti.
+      </div>
+      <div class="grid-item-release-date">Released on: 2023-03-13</div>
+    </div>
+  </div>
+  <div class="section-title">Another Section</div>
+  <div class="grid-container">
+    <div class="grid-item">
+      <div class="grid-item-header">Item 6</div>
+      <img class="grid-item-photo" src="https://www.ancodeai.com/placeholder.svg" alt="Placeholder image for Item 6"/>
+      <div class="grid-item-subtitle">
+        <i class="fas fa-lightbulb grid-item-subtitle-icon"></i>
+        Blacklight
+      </div>
+      <div class="grid-item-paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget lacus eget nunc tincidunt laoreet.
+        Suspendisse potenti. Mauris eget lacus eget nunc tincidunt laoreet. Suspendisse potenti.
+      </div>
+      <div class="grid-item-release-date">Released on: 2023-03-13</div>
+    </div>
+    <div class="grid-item">
+      <div class="grid-item-header">Item 6</div>
+      <img class="grid-item-photo" src="https://www.ancodeai.com/placeholder.svg" alt="Placeholder image for Item 6"/>
+      <div class="grid-item-subtitle">
+        <i class="fas fa-lightbulb grid-item-subtitle-icon"></i>
+        Blacklight
+      </div>
+      <div class="grid-item-paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget lacus eget nunc tincidunt laoreet.
+        Suspendisse potenti. Mauris eget lacus eget nunc tincidunt laoreet. Suspendisse potenti.
+      </div>
+      <div class="grid-item-release-date">Released on: 2023-03-13</div>
+    </div>
+    <div class="grid-item">
+      <div class="grid-item-header">Item 6</div>
+      <img class="grid-item-photo" src="https://www.ancodeai.com/placeholder.svg" alt="Placeholder image for Item 6"/>
+      <div class="grid-item-subtitle">
+        <i class="fas fa-lightbulb grid-item-subtitle-icon"></i>
+        Blacklight
+      </div>
+      <div class="grid-item-paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget lacus eget nunc tincidunt laoreet.
+        Suspendisse potenti. Mauris eget lacus eget nunc tincidunt laoreet. Suspendisse potenti.
+      </div>
+      <div class="grid-item-release-date">Released on: 2023-03-13</div>
+    </div>
