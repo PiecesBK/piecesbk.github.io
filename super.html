@@ -60,10 +60,45 @@
       color: #999;
       text-align: right;
     }
+
+    .filter-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .filter-label {
+      font-size: 1rem;
+      font-weight: bold;
+      margin-right: 0.5rem;
+    }
+
+    .filter-select {
+      width: 150px;
+      height: 30px;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
   </style>
 </head>
 
 <body>
+  <div class="filter-container">
+    <div class="filter-label">Category:</div>
+    <select class="filter-select">
+      <option value="all">All</option>
+      <option value="1">Category 1</option>
+      <option value="2">Category 2</option>
+    </select>
+    <div class="filter-label">Subtitle:</div>
+    <select class="filter-select">
+      <option value="all">All</option>
+      <option value="GITD">GITD</option>
+      <option value="Blacklight">Blacklight</option>
+    </select>
+  </div>
   <div class="grid-container">
     <div class="grid-item">
       <div class="grid-item-header">Item 1</div>
@@ -139,11 +174,4 @@
       </div>
       <div class="grid-item-paragraph">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget lacus eget nunc tincidunt laoreet.
-        Suspendisse potenti. Mauris eget lacus eget nunc tincidunt laoreet. Suspendisse potenti.
-      </div>
-      <div class="grid-item-release-date">Released on: 2023-03-13</div>
-    </div>
-  </div>
-</body>
-
-</html>
+        Suspendisse potenti. Mauris eget lacus eget nunc tincidunt laoreet
