@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="UTF-8" />
+  <title>Checklist</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&family=Lexend+Deca:wght@100..900&display=swap');
+</style>
+  <style>
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #111;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+    
+    .text-sm text-gray-500 {
+      font-size: small;
+    }
+    
+
+.dropdown-content a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #e33;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+    body {
+      color: #ffffff;
+      font-family: 'Lexend Deca', 'system', sans-serif;
+    }
+    
+    section-title {
+      font-family: 'Fontdiner Swanky', serif;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      padding: 1rem;
+    }
+
+    .grid-item {
+      background-color: #000;
+      padding: 1rem;
+      border: 1px solid #353535;
+      border-radius: 5px;
+    }
+
+    .grid-item-header {
+      font: 'Yellowtail';
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .grid-item-photo {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      margin-bottom: 0.5rem;
+    }
+
+    .grid-item-subtitle {
+      font-size: 1rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .grid-item-subtitle-icon {
+      margin-right: 0.5rem;
+    }
+
+    .grid-item-paragraph {
+      font-size: 0.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .grid-item-release-date {
+      font-size: 0.7rem;
+      color: #999;
+      text-align: right;,
+    }
+
+    .section-title {
+      font: Yellowtail;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 2rem 0;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body style="background-color: #0F0F0F;">
+  <ul>
+  <li><a href="#">Home</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Gastlecast</a>
+    <div class="dropdown-content">
+      <a href="https://www.youtube.com/@gastlecast" target="_blank">YouTube</a>
+      <a href="#https://www.instagram.com/gastlecast/" target="_blank">Instagram</a>
+      <a href="https://www.facebook.com/groups/gastlecast/" target="_blank">FB Group</a>
+      <a href="https://www.patreon.com/Gastlecast" target="_blank">Patreon</a>
+      <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Mischief Toys</a>
+    <div class="dropdown-content">
+      <a href="https://mischieftoys.com/" target="_blank">Retail Site</a>
+      <a href="https://www.instagram.com/mischieftoys/" target="_blank">Instagram</a>
+      <a href="https://www.facebook.com/groups/mischieftoys/" target="_blank">FB Group</a>
+      <li><a href="https://discord.gg/QtBmRZ9FEA" target="_blank"><span class="fancy" style="color: #e33" decoration-style="wavy">Discord</span></a></li>
+    </div>
+  </li>
+</ul>
+  
+  <div class="section-title">Gastley</div>
+  
+  <div class="grid-container">
+     <div class="grid-item">
+      <div class="grid-item-header">Water Tiki</div>
+      <img class="grid-item-photo" src="https://mischieftoys.com/cdn/shop/files/Picsart_24-07-21_17-47-41-574_f8f8a61b-c41b-4578-9fdf-b42a62c0a4fa.png?v=1721608320" alt="WaterTiki"/>
+      <div class="grid-item-subtitle">
+         <i class="fas fa-eye grid-item-subtitle-icon"></i>
+        Translucent
+      </div>
+      <div class="grid-item-paragraph">
+        The 2nd installment in the Tiki series, this Summer figure made a splash with his water gradient paint job.
+      </div>
+      <div class="flex items-center justify-between"><p class="text-xs text-gray-400">Piece Count: 305</p><p class="text-xs text-gray-400">Released: 7/2024</p>
+      </div>
+    </div>
+     <div class="grid-item">
+      <div class="grid-item-header">Uncle Gastley</div>
+      <img class="grid-item-photo" src="https://mischieftoys.com/cdn/shop/files/b6d87821-a3d0-421f-8eb1-0a2846df6561.jpg" alt="Unc"/>
+      <div class="grid-item-subtitle">
+         <i class="fas fa-fire grid-item-subtitle-icon"></i>
+        New Mold
+      </div>
+      <div class="grid-item-paragraph">
+        This Uncle Sam tribute piece arrived post-4th of July Week celebrations with patriotic gear and matching print!
+      </div>
+      <div class="flex items-center justify-between"><p class="text-xs text-gray-400">Piece Count: 376</p><p class="text-xs text-gray-400">Released: 7/2024</p>
+      </div>
+    </div><div class="grid-item">
+      <div class="grid-item-header">Radiated</div>
+      <img class="grid-item-photo" src="https://mischieftoys.com/cdn/shop/files/Picsart_24-07-02_18-56-20-410_aa1aa6fb-bd59-48a7-be4f-94fbfa842423.png?v=1720023018" alt="Radiated"/>
+      <div class="grid-item-subtitle">
+        <i class="fas fa-lightbulb grid-item-subtitle-icon"></i> Blacklight
+      </div>
+      <div class="grid-item-paragraph">
+        The spontaneous release of Radiated Gastley during 4th of July Week was a blast! Survivors will love this Blacklight reactive piece.
+      </div>
+      <div class="flex items-center justify-between"><p class="text-xs text-gray-400">Piece Count: 395</p><p class="text-xs text-gray-400">Released: 7/2024</p>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="grid-item-header">Snazzy Daddy</div>
+      <img class="grid-item-photo" src="https://i.ibb.co/VHY0sq7/image.png" alt="Snazzy"/>
+      <div class="grid-item-subtitle">
+        <i class="fas fa-paint-roller grid-item-subtitle-icon"></i>
+        Standard
+      </div>
+      <div class="grid-item-paragraph">
+        This Pride Month Gastley release is Snazzy, just as the name suggests, and arrives with a matching full-body Snazzy Daddy Gastley pin!
+      </div>
+      <div class="flex items-center justify-between"><p class="text-xs text-gray-400">Piece Count: 385</p><p class="text-xs text-gray-400">Released: 6/2024</p>
+      </div>
+    </div>
+     <div class="grid-item">
+      <div class="grid-item-header">X-Ray</div>
+      <img class="grid-item-photo" src="https://mischieftoys.com/cdn/shop/files/Picsart_24-05-14_21-22-12-645_5a046cc2-2f22-4ad7-84c1-cefcc9721dcb.png?v=1715805709" alt="X-Ray"/>
+      <div class="grid-item-subtitle">
+        <i class="fas fa-moon grid-item-subtitle-icon"></i>
+        GITD
+      </div>
+      <div class="grid-item-paragraph">
+        Another Gastley joins the Skeleton paintjob family, but this time with a GITD twist and a glittery-blue glow!
+      </div>
+      <div class="flex items-center justify-between"><p class="text-xs text-gray-400">Piece Count: 400</p><p class="text-xs text-gray-400">Released: 5/2024</p>
+      </div>
+    </div><div class="grid-item">
+      <div class="grid-item-header">Green Glow</div>
+      <img class="grid-item-photo" src="https://i.ibb.co/Hdf0f5d/429857928-417753470781704-6493235756565922661-n.jpg" alt="Green Glow"/>
+      <div class="grid-item-subtitle">
+        <i class="fas fa-moon grid-item-subtitle-icon"></i>
+        GITD
+      </div>
+      <div class="grid-item-paragraph">
+        The 3rd release in the Glow Gastley series. It follows Icy Blue and Pink Glow and was the perfect fit for a St. Patty's time drop.
+      </div>
+      <div class="flex items-center justify-between"><p class="text-xs text-gray-400">Piece Count: 370</p><p class="text-xs text-gray-400">Released: 3/2024</p>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="grid-item-header">Pink Glow</div>
+      <img class="grid-item-photo" src="https://mischieftoys.com/cdn/shop/files/Picsart_24-02-05_20-22-08-201_1.png?v=1707186783" alt="Pink Glow"/>
+      <div class="grid-item-subtitle">
+        <i class="fas fa-moon grid-item-subtitle-icon"></i>
+        GITD
+      </div>
+      <div class="grid-item-paragraph">
+        The 2nd release in the Glow Gastley series. It follows Icy Blue Glow and was released as a Valentine's Day drop.
+      </div>
+      <div class="flex items-center justify-between"><p class="text-xs text-gray-400">Piece Count: 350</p><p class="text-xs text-gray-400">Released: 2/2024</p>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="grid-item-header">Emo</div>
+      <img class="grid-item-photo" src="https://mischieftoys.com/cdn/shop/files/Picsart_24-01-26_15-17-51-028_d69c1663-4f2f-414d-abf1-9c9e9b6ee1c0.png?v=1706304293" alt="Emo"/>
+      <div class="grid-item-subtitle">
+        <i class="fas fa-flask grid-item-subtitle-icon"></i> Collab  <hr> <i class="fas fa-fire grid-item-subtitle-icon"></i> New Mold
+      </div>
+      <div class="grid-item-paragraph">
+        The first major retailer collab for Mischief Toys and a brand new mold! Hot Topic online drop had an HT Exclusive sticker.
+      </div>
+      <div class="flex items-center justify-between"><p class="text-xs text-gray-400">Piece Count: 575</p><p class="text-xs text-gray-400">Released: 1/2024</p>
+      </div>
+    </div>
+     <div class="grid-item">
+      <div class="grid-item-header">Black Metal</div>
+      <img class="grid-item-photo" src="https://mischieftoys.com/cdn/shop/files/Picsart_24-01-03_19-01-44-468_ac133878-4063-4774-ab12-f873273c3fae.png?v=1705340430" alt="BM"/>
+      <div class="grid-item-subtitle">
+        <i class="fas fa-paint-roller grid-item-subtitle-icon"></i>
+        Standard
+      </div>
+      <div class="grid-item-paragraph">
+        This release was an ode to Black Metal music and the highest piece count yet. 20 random orders were signed by Chris and Heather.
+      </div>
+      <div class="flex items-center justify-between"><p class="text-xs text-gray-400">Piece Count: 666</p><p class="text-xs text-gray-400">Released: 1/2024</p>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="grid-item-header">Icy Blue Glow</div>
+      <img class="grid-item-photo" src="https://mischieftoys.com/cdn/shop/files/Picsart_23-12-13_16-53-33-692_0cff1d9b-5855-40b2-a695-024cb7158438.png?v=1702607512" alt="Icy Glow"/>
+      <div class="grid-item-subtitle">
+        <i class="fas fa-moon grid-item-subtitle-icon"></i>
+        GITD
+      </div>
+      <div class="grid-item-paragraph">
+        The inaugural release in the Glow Gastley series. Launched during the Week of Mischief event around Christmas-time.
+      </div>
+      <div class="flex items-center justify-between"><p class="text-xs text-gray-400">Piece Count: 385</p><p class="text-xs text-gray-400">Released: 12/2023</p>
+      </div>
+    </div>
+     <div class="grid-item">
+      <div class="grid-item-header">Maryland</div>
+      <img class="grid-item-photo" src="https://www.routeoneapparel.com/cdn/shop/files/20231121_230634.jpg?v=1702052365" alt="Maryland"/>
+      <div class="grid-item-subtitle">
+        <i class="fas fa-flask grid-item-subtitle-icon"></i>
+        Collab
+      </div>
+      <div class="grid-item-paragraph">
+        Released as a collaboration with Route One Apparel, also a Maryland based company. First Run was limited to 330.
+      </div>
+      <div class="flex items-center justify-between"><p class="text-xs text-gray-400">Piece Count: 330/Open Run</p><p class="text-xs text-gray-400">Released: 12/2023</p>
+      </div>
+    </div>
+     <div class="grid-item">
+      <div class="grid-item-header">Tattooed</div>
+      <img class="grid-item-photo" src="https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1570987/Tattooed_Gastley_and_Pin_Vinyl_Art_Toys_64a370fc-47f2-483b-b574-c3131465b346.png" alt="Tattooed"/>
+      <div class="grid-item-subtitle">
+        <i class="fas fa-crown grid-item-subtitle-icon"></i>
+        Coven Exclusive
+      </div>
+      <div class="grid-item-paragraph">
+        Coven-exclusive release and acted as a first figure offering for newly inducted members. Coven logo tattooed on chest! 
+      </div>
+        <div class="flex items-center justify-between"><p class="text-xs text-gray-400">Piece Count: 250</p><p class="text-xs text-gray-400">Released: 12/2023</p>
+        </div>
+    </div>
+     <div class="grid-item">
+      <div class="grid-item-header">In Flames</div>
+      <img class="grid-item-photo" src="https://mischieftoys.com/cdn/shop/files/377200968_1263149444355397_5789901032912826374_n.jpg?v=1700789964" alt="In Flames"/>
+      <div class="grid-item-subtitle">
+        <i class="fas fa-eye grid-item-subtitle-icon"></i>
+        Translucent
+      </div>
+      <div class="grid-item-paragraph">
+        A Black Friday 2023 Blind Drop-this release was teased via Instagram and an email warning with no specific time.
+      </div>
+        <div class="flex items-center justify-between"><p class="text-xs text-gray-400">Piece Count: 370</p><p class="text-xs text-gray-400">Released: 11/2023</p>
+        </div>
+    </div>
+    <div class="grid-item">
+      <div class="grid-item-header">Blacklight Gargoyle</div>
+      <img class="grid-item-photo" src="https://mischieftoys.com/cdn/shop/files/395787770_349164134286165_4065071888856951930_n_67385dae-1695-434c-aa8e-7b1d14eca205.jpg?v=1698371742" alt="BLGargoyle"/>
+      <div class="grid-item-subtitle">
+        <i class="fas fa-city grid-item-subtitle-icon"></i> Gargoyleㅤㅤㅤ  <hr> <i class="fas fa-lightbulb grid-item-subtitle-icon"></i> Blacklight
+      </div>
+      <div class="grid-item-paragraph">
+        Originally planned as a standalone drop, watch the NYCC23 vlog for the full story on this super-limited piece.
+      </div>
+        <div class="flex items-center justify-between"><p class="text-xs text-gray-400">Piece Count: 28</p><p class="text-xs text-gray-400">Released: 10/2023</p>
+        </div>
+    </div>
+    <div class="grid-item">
+      <div class="grid-item-header">Broken Free Gargoyle</div>
+      <img class="grid-item-photo" src="https://mischieftoys.com/cdn/shop/files/395801772_1051583989371461_1402292252117649572_n_a186f3c0-9aa1-46e3-bc90-77114f6e594c.jpg?v=1698371742" alt="BFGargoyle"/>
+      <div class="grid-item-subtitle">
+        <i class="fas fa-city grid-item-subtitle-icon"></i>
+        Gargoyle
+      </div>
+      <div class="grid-item-paragraph">
+        Released during the Halloween Week of Mischief. Orders had a chance to receive the LE28 Blacklight Gargoyle.
+      </div>
+        <div class="flex items-center justify-between"><p class="text-xs text-gray-400">Piece Count: 400</p><p class="text-xs text-gray-400">Released: 10/2023</p>
+        </div>
+    </div>
+    <div class="grid-item">
+      <div class="grid-item-header">Pumpkin</div>
+      <img class="grid-item-photo" src="https://mischieftoys.com/cdn/shop/files/396222160_648979794049604_5152464789498467620_n_51fe772e-98af-499e-9aef-b70ef1a0cbe0.jpg?v=1698285284" alt="Pumpkin"/>
+      <div class="grid-item-subtitle">
+        <i class="fas fa-paint-roller grid-item-subtitle-icon"></i>
+        Standard
+      </div>
+      <div class="grid-item-paragraph">
+        Released during the Halloween Week of Mischief, this design was also a part of the Gastley Mask Contest!
+      </div>
+      <div class="flex items-center justify-between"><p class="text-xs text-gray-400">Piece Count: 355</p><p class="text-xs text-gray-400">Released: 10/2023</p>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="grid-item-header">NYCC Blacklight</div>
+      <img class="grid-item-photo" src="https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1528121/Blacklight_Gastley_Vinyl_Art_Toys_35ef8c20-f7ea-4a12-9f9a-d173950f89a9.png" alt="BL2"/>
+      <div class="grid-item-subtitle">
+        <i class="fas fa-lightbulb grid-item-subtitle-icon"></i>
+        Blacklight
+      </div>
+      <div class="grid-item-paragraph">
+        This NYCC exclusive released alongside Blacklight Demonstro at NYCC 2023 and had a small online release!
+      </div>
+      <div class="flex items-center justify-between"><p class="text-xs text-gray-400">Piece Count: 355</p><p class="text-xs text-gray-400">Released: 10/2023</p>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="grid-item-header">Possessed</div>
+      <img class="grid-item-photo" src="https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1527625/Possessed_Gastley_Vinyl_Art_Toys_276cf31c-3d4d-4cb1-af4b-d1b05372632a.png" alt="Possessed"/>
+      <div class="grid-item-subtitle">
+        <i class="fas fa-paint-roller grid-item-subtitle-icon"></i>
+        Standard
+      </div>
+      <div class="grid-item-paragraph">
+        As a result of the Blacklight Gargoyle production issues, this Exorcist-inspired figure replaced its' drop in Oct 2023. 
+      </div>
+      <div class="flex items-center justify-between"><p class="text-xs text-gray-400">Piece Count: 260</p><p class="text-xs text-gray-400">Released: 10/2023</p>
+      </div>
+    </div>
+     <div class="grid-item">
+      <div class="grid-item-header">Ghost</div>
+      <img class="grid-item-photo" src="https://mischieftoys.com/cdn/shop/files/364254177_643678441070810_1185780137135021149_n_96989804-2aa0-4126-b843-630e51617d2c.jpg?v=1691271254" alt="Ghost"/>
+      <div class="grid-item-subtitle">
+        <i class="fas fa-eye grid-item-subtitle-icon"></i>
+        Translucent
+      </div>
+      <div class="grid-item-paragraph">
+        This stunning figure was released in August 2023 alongside 2 pins including 'I Ain't Afraid of No Gastley'.
+      </div>
+        <div class="flex items-center justify-between"><p class="text-xs text-gray-400">Piece Count: 305</p><p class="text-xs text-gray-400">Released: 8/2023</p>
+        </div>
+    </div>
+    <div class="grid-item">
+      <div class="grid-item-header">Clown</div>
+      <img class="grid-item-photo" src="https://mischieftoys.com/cdn/shop/files/356945402_1004640427359177_697560513581545786_n.jpg?v=1690133339g" alt="Clown"/>
+      <div class="grid-item-subtitle">
+        <i class="fas fa-paint-roller grid-item-subtitle-icon"></i>
+        Standard
+      </div>
+      <div class="grid-item-paragraph">
+        This carnival-inspired Gastley was released standalone and with a limited stock of 150 pin bundles.
+      </div>
+      <div class="flex items-center justify-between"><p class="text-xs text-gray-400">Piece Count: 255</p><p class="text-xs text-gray-400">Released: 7/2023</p>
+      </div>
+    </div>
+     <div class="grid-item">
+      <div class="grid-item-header">Tiki</div>
+      <img class="grid-item-photo" src="https://mischieftoys.com/cdn/shop/files/20230628_203942-01_2b44f0ed-7225-4b3f-a65b-a6e60fe25584.jpg?v=1688003957&width=2048" alt="Tiki"/>
+      <div class="grid-item-subtitle">
+        <i class="fas fa-fire grid-item-subtitle-icon"></i>
+        New Mold
+      </div>
+      <div class="grid-item-paragraph">
+        This super-detailed mold with removable pitchfork dropped alongside a Tiki Button-Up. One shirt order got a Proto!
+      </div>
+      <div class="flex items-center justify-between"><p class="text-xs text-gray-400">Piece Count: 400</p><p class="text-xs text-gray-400">Released: 6/2023</p>
+      </div>
+    </div>
+     <div class="grid-item">
+      <div class="grid-item-header">Pride</div>
+      <img class="grid-item-photo" src="https://mischieftoys.com/cdn/shop/files/20230605_180407_0_-01_7bee9830-71b7-4ab3-a8c4-645f73c504ca.jpg?v=1686532073&width=2048" alt="Pride"/>
+      <div class="grid-item-subtitle">
+        <i class="fas fa-eye grid-item-subtitle-icon"></i>
+        Translucent
+      </div>
+      <div class="grid-item-paragraph">
+        With a percentage of profits donated to @antiviolence, 1 lucky order got a proto and 25 were signed by Chris and Heather!
+      </div>
+        <div class="flex items-center justify-between"><p class="text-xs text-gray-400">Piece Count: 500</p><p class="text-xs text-gray-400">Released: 6/2023</p>
+        </div>
+    </div>
+    <div class="grid-item">
+      <div class="grid-item-header">Toxic</div>
+      <img class="grid-item-photo" src="https://mischieftoys.com/cdn/shop/files/PSX_20230508_164554_c5cf7549-741f-4113-a90a-9525ea7509f3.jpg?v=1683581403&width=2048" alt="Toxic"/>
+      <div class="grid-item-subtitle">
+        <i class="fas fa-lightbulb grid-item-subtitle-icon"></i>
+        Blacklight
+      </div>
+      <div class="grid-item-paragraph">
+        This super-bright Blacklight figure was released in May 2023, with only 100 pins exclusive to Pin Bundle orders!
+      </div>
+     <div class="flex items-center justify-between"><p class="text-xs text-gray-400">Piece Count: 405</p><p class="text-xs text-gray-400">Released: 5/2023</p>
+    </div>
+  </div>
+    <div class="grid-item">
+      <div class="grid-item-header">Zombie</div>
+      <img class="grid-item-photo" src="https://mischieftoys.com/cdn/shop/products/20230220_121047.jpg?v=1677510582&width=2048" alt="Zombie"/>
+      <div class="grid-item-subtitle">
+        <i class="fas fa-lightbulb grid-item-subtitle-icon"></i>
+        Blacklight
+      </div>
+      <div class="grid-item-paragraph">
+        This figure came back from the dead in March of 2023 and one lucky order received a signed Artist Proof figure! 
+      </div>
+     <div class="flex items-center justify-between"><p class="text-xs text-gray-400">Piece Count: 285</p><p class="text-xs text-gray-400">Released: 3/2023</p>
+    </div>
+  </div>
+    <div class="grid-item">
+      <div class="grid-item-header">Be Mine... Until Death</div>
+      <img class="grid-item-photo" src="https://mischieftoys.com/cdn/shop/products/20230206_205205-01.jpg?v=1675780947&width=2048" alt="Be Mine"/>
+      <div class="grid-item-subtitle">
+        <i class="fas fa-lightbulb grid-item-subtitle-icon"></i>
+        Blacklight
+      </div>
+      <div class="grid-item-paragraph">
+        Teased without any figure photos, this Valentine's Day 2023 surprise release was a smash hit and sold out in seconds!
+      </div>
+     <div class="flex items-center justify-between"><p class="text-xs text-gray-400">Piece Count: 214</p><p class="text-xs text-gray-400">Released: 2/2023</p>
+    </div>
+  </div>
+    <div class="grid-item">
+      <div class="grid-item-header">OG Blacklight</div>
+      <img class="grid-item-photo" src="https://mischieftoys.com/cdn/shop/products/Picsart_23-01-06_16-38-18-887_1.png?v=1673046193&width=2048" alt="OGBL"/>
+      <div class="grid-item-subtitle">
+        <i class="fas fa-lightbulb grid-item-subtitle-icon"></i>
+        Blacklight
+      </div>
+      <div class="grid-item-paragraph">
+        The original Blacklight Gastley, the first giveaway! @crazymom_collects won an AP in the photo contest!
+      </div>
+     <div class="flex items-center justify-between"><p class="text-xs text-gray-400">Piece Count: 385</p><p class="text-xs text-gray-400">Released: 1/2023</p>
+    </div>
+  </div>
+        <div class="grid-item">
+      <div class="grid-item-header">Narrator</div>
+      <img class="grid-item-photo" src="https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1273844/The_Narrator_Vinyl_Art_Toys_6774c00e-df42-4007-b0f1-bad1fb5f7c99.PNG" alt="Narrator"/>
+      <div class="grid-item-subtitle">
+        <i class="fas fa-crown grid-item-subtitle-icon"></i>
+        Coven Exclusive
+      </div>
+      <div class="grid-item-paragraph">
+        An homage to the voice behind Mischief Toys figure reveal videos, this meaningful piece was the very first Coven exclusive figure.
+      </div>
+     <div class="flex items-center justify-between"><p class="text-xs text-gray-400">Piece Count: 150</p><p class="text-xs text-gray-400">Released: 12/2022</p>
+    </div>
+  </div>
+    <div class="grid-item">
+      <div class="grid-item-header">Skeleton</div>
+      <img class="grid-item-photo" src="https://mischieftoys.com/cdn/shop/products/292234238_486984443372375_1029860436924182112_n.jpg?v=1666546608&width=2048" alt="Skelly"/>
+      <div class="grid-item-subtitle">
+        <i class="fas fa-paint-roller grid-item-subtitle-icon"></i>
+        Standard
+      </div>
+      <div class="grid-item-paragraph">
+        Released around Halloween as one of the first "surprise" drops, only announced via Facebook and email. 
+      </div>
+     <div class="flex items-center justify-between"><p class="text-xs text-gray-400">Piece Count: 340</p><p class="text-xs text-gray-400">Released: 10/2022</p>
+    </div>
+  </div>
+      <div class="grid-item">
+      <div class="grid-item-header">Breaking Free Gargoyle</div>
+      <img class="grid-item-photo" src="https://mischieftoys.com/cdn/shop/products/310173044_3255183948098193_4439849752160521688_n.jpg?v=1665536913&width=2048" alt="BreakingFree"/>
+      <div class="grid-item-subtitle">
+        <i class="fas fa-city grid-item-subtitle-icon"></i> Gargoyleㅤㅤㅤ  <hr> <i class="fas fa-lightbulb grid-item-subtitle-icon"></i> Blacklight
+      </div>
+      <div class="grid-item-paragraph">
+        Released online as a bundle with Gargoyle Gastley during NYCC22, this version features a cracked blacklight standard job.
+      </div>
+        <div class="flex items-center justify-between"><p class="text-xs text-gray-400">Piece Count: 250</p><p class="text-xs text-gray-400">Released: 10/2022</p>
+        </div>
+    </div>
+    <div class="grid-item">
+      <div class="grid-item-header">Gargoyle</div>
+      <img class="grid-item-photo" src="https://mischieftoys.com/cdn/shop/products/Picsart_22-09-19_17-42-06-552.png?v=1665537057&width=2048" alt="Garg"/>
+      <div class="grid-item-subtitle">
+        <i class="fas fa-city grid-item-subtitle-icon"></i> Gargoyleㅤㅤㅤ<hr></i>
+      </div>
+      <div class="grid-item-paragraph">
+        The original Gargoyle mold, released at NYCC22 and online as a bundle with Breaking Free.
+      </div>
+        <div class="flex items-center justify-between"><p class="text-xs text-gray-400">Piece Count: 400</p><p class="text-xs text-gray-400">Released: 10/2022</p>
+        </div>
+    </div>
+    <div class="grid-item">
+      <div class="grid-item-header">Error Glow</div>
+      <img class="grid-item-photo" src="https://mischieftoys.com/cdn/shop/products/PSX_20220918_161313.jpg?v=1664368523" alt="Error"/>
+      <div class="grid-item-subtitle">
+        <i class="fas fa-lightbulb grid-item-subtitle-icon"></i> Blacklight<hr></i>
+      </div>
+      <div class="grid-item-paragraph">
+        The result of a factory error, this figure glowed different colors. Originally "trash," fans wanted him anyway, prompting the release.
+      </div>
+        <div class="flex items-center justify-between"><p class="text-xs text-gray-400">Piece Count: 265</p><p class="text-xs text-gray-400">Released: 9/2022</p>
+        </div>
+    </div>
+    <div class="grid-item">
+      <div class="grid-item-header">Initiation</div>
+      <img class="grid-item-photo" src="https://mischieftoys.com/cdn/shop/products/277542826_369684085068173_51905116699317971_n_6dc6d0b5-5e57-4907-912a-bbc767a3dfbc.jpg?v=1649250195&width=2048" alt="Initiation"/>
+      <div class="grid-item-subtitle">
+           <i class="fas fa-paint-roller grid-item-subtitle-icon"></i>
+        Standard
+      </div>
+      <div class="grid-item-paragraph">
+        The 2nd ever Gastley, Initiation Gastley was first available via Patreon and then as a public drop. Orders included not 1 but 2 exclusive pins!
+      </div>
+        <div class="flex items-center justify-between"><p class="text-xs text-gray-400">Piece Count: 150</p><p class="text-xs text-gray-400">Released: 4/2022</p>
+        </div>
+    </div>
+      <div class="grid-item">
+      <div class="grid-item-header">First Run</div>
+      <img class="grid-item-photo" src="https://mischieftoys.com/cdn/shop/products/269748239_3132388140416179_1101845389837609173_n_edda3cb4-5c20-45f6-ae15-7ac9c30835a5.jpg?v=1642459683" alt="First Run"/>
+      <div class="grid-item-subtitle">
+           <i class="fas fa-paint-roller grid-item-subtitle-icon"></i>
+        Standard
+      </div>
+      <div class="grid-item-paragraph">
+        The figure that started it all. All 200 were signed and sold as a bundle and included a Gastley head pin. Sold out in 1 minute.
+      </div>
+        <div class="flex items-center justify-between"><p class="text-xs text-gray-400">Piece Count: 200</p><p class="text-xs text-gray-400">Released: 1/2022</p>
+        </div>
+    </div>
+     </div>
+  
+  <div class="section-title">Demonstro</div>
+    <div class="grid-container">
+    <div class="grid-item">
+      <div class="grid-item-header">Initiation</div>
+      <img class="grid-item-photo" src="https://mischieftoys.com/cdn/shop/files/8e5c0fef-52f1-4e82-bd90-437a94d6b895_f2fc9e45-6313-44fc-b2a2-1095fdba3956.jpg" alt="Initiation"/>
+      <div class="grid-item-subtitle">
+        <i class="fas fa-crown grid-item-subtitle-icon"></i>
+        Coven Exclusive
+      </div>
+      <div class="grid-item-paragraph">
+       The first Coven-Exclusive Demonstro release and the 2nd in the Initiation series. Launched as a pin bundle, 10 were signed at random.
+      </div>
+      <div class="flex items-center justify-between"><p class="text-xs text-gray-400">Piece Count: 250</p><p class="text-xs text-gray-400">Released: 4/2024</p>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="grid-item-header">Don't Be Mine</div>
+      <img class="grid-item-photo" src="https://mischieftoys.com/cdn/shop/files/rn-image_picker_lib_temp_630de140-01f0-419a-bdc6-0df82ac40964.jpg" alt="DBM"/>
+      <div class="grid-item-subtitle">
+        <i class="fas fa-lightbulb grid-item-subtitle-icon"></i>
+        Blacklight
+      </div>
+      <div class="grid-item-paragraph">
+        A spinoff of the widely-loved Be Mine Gastley, this V-Day 2023 Demonstro shares the same stunning Pink Skeleton paintjob.
+      </div>
+      <div class="flex items-center justify-between"><p class="text-xs text-gray-400">Piece Count: 214</p><p class="text-xs text-gray-400">Released: 2/2024</p>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="grid-item-header">NYCC Blacklight</div>
+      <img class="grid-item-photo" src="https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1528117/Blacklight_Demonstro_Vinyl_Art_Toys_214e2fc0-93ab-44d9-99aa-f78cf46fabd1.png" alt="NYCCBLD"/>
+      <div class="grid-item-subtitle">
+        <i class="fas fa-lightbulb grid-item-subtitle-icon"></i> Blacklight
+      </div>
+      <div class="grid-item-paragraph">
+The second iteration of Demonstro, in full Blacklight glory. A small batch released online for those who couldn't make it to NYCC!
+      </div>
+      <div class="flex items-center justify-between"><p class="text-xs text-gray-400">Piece Count: 305</p><p class="text-xs text-gray-400">Released: 10/2023</p>
+      </div>
+    </div>
+     <div class="grid-item">
+      <div class="grid-item-header">First Run</div>
+      <img class="grid-item-photo" src="https://mischieftoys.com/cdn/shop/files/379633143_280657831432300_8219812723888948022_n_9a15004c-0dca-4d76-9c27-edd60622bc6e.jpg?v=1695598423&width=2048" alt="FRD"/>
+      <div class="grid-item-subtitle">
+        <i class="fas fa-paint-roller grid-item-subtitle-icon"></i>
+        Standard
+      </div>
+      <div class="grid-item-paragraph">
+        This First Run released alongside the original Demonstro. Set apart by a signed box, this First Run also came bundled with a Demonstro pin!
+      </div>
+      <div class="flex items-center justify-between"><p class="text-xs text-gray-400">Piece Count: 250</p><p class="text-xs text-gray-400">Released: 9/2023</p>
+      </div>
+      </div>
+    </div>
+  <div class="section-title"><p class="text-xs text-gray-400">Thanks to Gristy, Heather, Matt Watt, Nate Bakken, and natedogg1111 for info. Images via Mischief Toys, HobbyDB.</p></div>
